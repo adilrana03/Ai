@@ -1,0 +1,17 @@
+[
+  {
+    "ticket_id": "ops-1042",
+    "customer": "Northwind Logistics",
+    "hours": 3.5,
+    "status": "open",
+    "opened_on": "2026-09-01",
+    "owner": "maya"
+  },
+  {
+    "ticket_id": "ops-1043",
+    "customer": "Helios Clinics",
+    "hours": 12,
+    "status": "in_progress",
+    "opened_on": "2026-09-03"
+  }
+]

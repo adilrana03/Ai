@@ -1,0 +1,3 @@
+ticket_id,customer,hours,status,opened_on,owner
+ops-2001,Harbor Freight,1.25,done,2026-08-20,lee
+ops-2002,Harbor Freight,0,blocked,2026-08-22,
