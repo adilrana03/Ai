@@ -46,6 +46,7 @@
 # str="apple"
 # print(len(str))
 
+from this import d
 from tkinter import WORD
 
 
@@ -310,20 +311,62 @@ from tkinter import WORD
 # num=sum(int(input("enter a number: ")))
 # print(num)
 
-def sum_of_numbers(n):
-    #n=5
-    if(n==0):
-        return 0
-    else:
-        return n+sum_of_numbers(n-1)
-        #5+sum_of_numbers(4)
-        #5+4+sum_of_numbers(3)
-        #5+4+3+sum_of_numbers(2)
-        #5+4+3+2+sum_of_numbers(1)
-        #5+4+3+2+1+sum_of_numbers(0)
-        #5+4+3+2+1+0
-        #15
+# def sum_of_numbers(n):
+#     #n=5
+#     if(n==0):
+#         return 0
+#     else:
+#         return n+sum_of_numbers(n-1)
+#         #5+sum_of_numbers(4)
+#         #5+4+sum_of_numbers(3)
+#         #5+4+3+sum_of_numbers(2)
+#         #5+4+3+2+sum_of_numbers(1)
+#         #5+4+3+2+1+sum_of_numbers(0)
+#         #5+4+3+2+1+0
+#         #15
 
-num=sum_of_numbers(int(input("enter a number: ")))
-print(num)
+# num=sum_of_numbers(int(input("enter a number: ")))
+# print(num)
 
+# f=open("week-01-python-foundations/sample.txt", "w+")
+# f.write("1234567890")
+# # print(f.read())
+# f.close()
+
+
+
+
+# with open("sample2.text","w") as f:
+#     f.write("This is the second demo file written by python\n this is the second line of the file\n this is the third line of the file")
+
+
+# with open("./week-01-python-foundations/sample2.txt", 'r') as f:
+#  str=f.read()
+#  if str.find("5"):
+#     new_str=str.replace("This", "HMMMMMM")  
+#     print(new_str)
+#  else:
+#     print("5 is not found in the file")
+# with open("./week-01-python-foundations/sample2.txt", 'w') as f:
+#     f.write(new_str)
+#     print(new_str)
+# with open("./week-01-python-foundations/sample2.txt", 'r') as f:
+#     print(f.read())
+
+
+def checkname(word):
+    line=1
+    data=True
+    with open("./week-01-python-foundations/sample2.txt", 'r') as f:
+       while data:
+        data=f.readline()
+        if(word in data):
+            print(f"Word {word} found at line {line}")
+            return
+        line+=1    
+    print(f"Word {word} not found ")
+    return -1
+    
+       
+ans=checkname("third--")
+print(ans)
